@@ -53,3 +53,29 @@ The present modules in the project are:
 - Face Recognition : Recognition of Faces present in the database 
 - AutoMode : A combination of mask module and face recog module. Check below image for working of Automode.
 
+**Decision Tree for Automode**
+
+![image](automode-decisiontree.png)
+
+## Validation Results
+
+Confusion Matrix for the masked module:
+
+|            | Mask | No Mask |
+| ---------- | ---- | ------- | 
+| Mask | 97.358 | 2.641 |
+| No Mask |  7.345 | 92.655 |
+
+Confusion Matrix for AutoMode module:
+| | atharv-sinha | bill-gates | donald-trump | narendra-modi | jack-ma | mask | elon-musk | unknown |
+| --- | --- |--- |--- |--- |--- |--- |--- |--- |
+|atharv-sinha | 75.342 |1.9 | 0 | 0 | 0 | 0 |0 | 22.7 |
+| bill-gates | 0 | 83.7379 | 3.5 | 4.31 | 3.372 | 0 | 3.341 | 1.7 |
+| donald-trump | 0 | 1.334 | 85.759 | 9.792 | 0 | 0 |  0 | 3.11 |
+| narendra-modi | 1.7 | 0 | 0 | 72.35 | 12.66 | 0 | 0 | 13.22 |
+| jack-ma | 0 | 4.5 | 0 | 0 | 76.8 | 0 | 4.5 | 14.083 |
+| mask | 0 | 0 | 0 | 0 | 0 | 97.34 | 0 | 2.66 |
+| elon-musk | 0 | 1.84 | 0 | 0 | 12.154 | 0 | 70.234 | 15.8 |
+| unknown | 0.8 | 2.67 | 2.42 | 1.542 | 11.345 | 0 | 1.852 | 79.833 |
+
+
