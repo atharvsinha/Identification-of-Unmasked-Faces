@@ -27,3 +27,29 @@ The existing dataset looks like this:
 | mask | 450 | narendra-modi | 142 |
 | narendra-modi | 108 | unknown | 141 |
 | unknown | 445 |
+
+The validation dataset looks like this:
+
+**Combo, Mask Module**
+| Label | # of Images | Label | # of Images | 
+| ----- |------------ | ----- |------------ | 
+| atharv-sinha | 34 | mask | 239 |
+| bill-gates | 37 | no-mask | 241 |
+| donald-trump | 36 | 
+| elon-musk | 36 | 
+| jack-ma | 36 | 
+| mask | 239 | 
+| narendra-modi | 
+| unknown | 241 |
+
+You can access the database and validation data from the following Google Drive Link: https://drive.google.com/drive/folders/1GiemUX1UKkM7xxZfDiynqTZ8-427CPZA
+
+### Execution
+
+The `project.py` file can be run to perform various operations.
+The present modules in the project are:
+- Database Building Module : Can add more items in the database
+- Mask Detection : Identification of Masked or Unmasked Faces
+- Face Recognition : Recognition of Faces present in the database 
+- AutoMode : A combination of mask module and face recog module. Check below image for working of Automode.
+
